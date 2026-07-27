@@ -1,16 +1,19 @@
 [project]
 name = "p3p"
 version = "0.1.0"
-description = "Add your description here"
+description = "Run the shared conversion benchmark with pandas 3"
 readme = "README.md"
 authors = [
     { name = "NostraDavid", email = "55331731+NostraDavid@users.noreply.github.com" }
 ]
 requires-python = ">=3.14"
 dependencies = [
-    "pandas==2.3.3", # latest version of pandas 2.x
-    "polars>=1.43.0",
+    "conversion-benchmark",
+    "pandas==3.0.5", # latest version of pandas 3.x
 ]
+
+[tool.uv.sources]
+conversion-benchmark = { path = "../benchmark", editable = true }
 
 [project.scripts]
 p3p = "p3p:main"

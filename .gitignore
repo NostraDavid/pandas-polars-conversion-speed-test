@@ -1,9 +1,17 @@
+# ignore all direct items, nonrecursively
 /*
 
-# files
+# unignore folders
+!benchmark
+!p2p
+!p3p
+
+# unignore files
+!.bumpversion.cfg
 !.gitignore
+!Justfile
 !README.md
 
-# folders
-!p2p/
-!p3p/
+# reignore subfolders/files *anywhere* in the project
+__pycache__
+*.egg-info unit-test

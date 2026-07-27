@@ -1,0 +1,19 @@
+[project]
+name = "conversion-benchmark"
+version = "0.1.0"
+description = "Shared pandas and Polars conversion benchmark"
+readme = "README.md"
+authors = [
+    { name = "NostraDavid", email = "55331731+NostraDavid@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "numpy>=2.3.0",
+    "pandas>=2.3.0,<4",
+    "polars>=1.43.0",
+    "pyarrow>=21.0.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.11.21,<0.12.0"]
+build-backend = "uv_build"

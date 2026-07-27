@@ -1,16 +1,19 @@
 [project]
 name = "p2p"
 version = "0.1.0"
-description = "Add your description here"
+description = "Run the shared conversion benchmark with pandas 2"
 readme = "README.md"
 authors = [
     { name = "NostraDavid", email = "55331731+NostraDavid@users.noreply.github.com" }
 ]
 requires-python = ">=3.14"
 dependencies = [
+    "conversion-benchmark",
     "pandas==2.3.3", # latest version of pandas 2.x
-    "polars>=1.43.0",
 ]
+
+[tool.uv.sources]
+conversion-benchmark = { path = "../benchmark", editable = true }
 
 [project.scripts]
 p2p = "p2p:main"
