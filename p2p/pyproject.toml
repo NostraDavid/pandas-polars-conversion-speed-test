@@ -1,0 +1,20 @@
+[project]
+name = "p2p"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "NostraDavid", email = "55331731+NostraDavid@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "pandas==2.3.3", # latest version of pandas 2.x
+    "polars>=1.43.0",
+]
+
+[project.scripts]
+p2p = "p2p:main"
+
+[build-system]
+requires = ["uv_build>=0.11.21,<0.12.0"]
+build-backend = "uv_build"

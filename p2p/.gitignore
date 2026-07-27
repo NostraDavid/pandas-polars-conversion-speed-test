@@ -1,0 +1,16 @@
+# ignore all direct items, nonrecursively
+/*
+
+# unignore folders
+!src/
+
+# unignore files
+!.python-version
+!.gitignore
+!README.md
+!pyproject.toml
+!uv.lock
+
+# reignore subfolders/files *anywhere* in the project
+__pycache__
+*.egg-info
