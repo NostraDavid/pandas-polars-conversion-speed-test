@@ -37,6 +37,7 @@ def _run_environment(
         [
             "uv",
             "run",
+            "--locked",
             "--project",
             str(root / project),
             executable,
